@@ -45,30 +45,46 @@
     <link href="css/style.css" rel="stylesheet">
 </head>
 
-<body data-spy="scroll" data-target=".navbar" data-offset="51">
+<body data-spy="scroll" data-target=".navbar" data-offset="51" style="background-color: var(--primary-bg)">
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-    <!-- Navbar Start -->
-    <nav class="navbar fixed-top shadow-sm navbar-expand-lg bg-light navbar-light py-3 py-lg-0 px-lg-5">
+     <!-- about -->
+<div class="about">
+  <a class="bg_links social portfolio" href="https://www.rafaelalucas.com" target="_blank">
+     <span class="icon"></span>
+  </a>
+  <a class="bg_links social dribbble" href="https://dribbble.com/rafaelalucas" target="_blank">
+     <span class="icon"></span>
+  </a>
+  <a class="bg_links social linkedin" href="https://www.linkedin.com/in/rafaelalucas/" target="_blank">
+     <span class="icon"></span>
+  </a>
+  <a class="bg_links logo"></a>
+</div>
+<!-- end about -->
+
+
+  <!-- Navbar Start -->
+    <nav class="navbar fixed-top shadow-sm navbar-expand-lg   py-3 py-lg-0 px-lg-5">
         <a href="index.html" class="navbar-brand ml-lg-3">
-            <h1 class="m-0 display-5"><span class="text-primary">SNEHA</span></h1>
+            <h1 class="m-0 display-5"><span style="color: #ff33cc;">SNEHA</span></h1>
         </a>
         <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
-            <span class="navbar-toggler-icon"></span>
+            <span class="navbar-toggler-icon text-light" ></span>
         </button>
         <div class="collapse navbar-collapse px-lg-3" id="navbarCollapse">
-            <div class="navbar-nav m-auto py-0">
-                <a href="#home" class="nav-item nav-link active">Home</a>
-                <a href="#about" class="nav-item nav-link">About</a>
-                <a href="#qualification" class="nav-item nav-link">Resume</a>
-                <a href="#skill" class="nav-item nav-link">Skill</a>
+            <div class="navbar-nav m-auto py-0 py-4">
+                <a href="#home" class="nav-item nav-link text-light active">Home</a>
+                <a href="#about" class="nav-item nav-link text-light">About</a>
+                <a href="#qualification" class="nav-item nav-link text-light">Resume</a>
+                <a href="#skill" class="nav-item nav-link text-light">Skill</a>
              
-                <a href="#Portfolio" class="nav-item nav-link">Portfolio</a>
+                <a href="#Portfolio" class="nav-item nav-link text-light">Portfolio</a>
                
                
-                <a href="#contact" class="nav-item nav-link">Contact</a>
+                <a href="#contact" class="nav-item nav-link text-light">Contact</a>
             </div>
-            <a href="#contact" class="btn btn-outline-primary d-none d-lg-block">Hire Me</a>
+            <a href="#contact" class="neon-button">Hire Me</a>
         </div>
     </nav>
     <!-- Navbar End -->
@@ -94,61 +110,74 @@
 
 
     <!-- Header Start -->
+   <div class="header-section">
     <div class="container-fluid bg-primary d-flex align-items-center mb-5 py-5" id="home" style="min-height: 100vh;">
-        <div class="container">
-            <div class="row align-items-center">
-                <div class="col-lg-5 px-5 pl-lg-0 pb-5 pb-lg-0">
-                    <img class="img-fluid w-100 rounded-circle shadow-sm" src="img/professional photo-2.png" alt="">
-                </div>
-                <div class="col-lg-7 text-center text-lg-left">
-                    <h3 class="text-white font-weight-normal mb-3">I'm</h3>
-                    <h1 class="display-3 text-uppercase text-primary mb-2" style="-webkit-text-stroke: 2px #ffffff;">Sneha</h1>
-                    <h1 class="typed-text-output d-inline font-weight-lighter text-white"></h1>
-                    <div class="typed-text d-none">Front End Developer, Web Developer, Web Designer</div>
-                    <div class="d-flex align-items-center justify-content-center justify-content-lg-start pt-5">
-                        <a href="./Resume//Sneha-traditional resume (2).pdf" download="" class="btn btn-outline-light mr-5">Download CV</a>
-                        <!-- <button type="button" class="btn-play" data-toggle="modal"
-                            data-src="https://www.youtube.com/embed/DWRcNpR6Kdc" data-target="#videoModal">
-                            <span></span>
-                        </button> -->
-                        <!-- <h5 class="font-weight-normal text-white m-0 ml-4 d-none d-sm-block">Play Video</h5> -->
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
+      <div class="container">
+          <div class="row align-items-center">
+              <div class="col-lg-5 px-5 pl-lg-0 pb-5 pb-lg-0 profile-pic-div">
+                  <img class="img-fluid w-100  shadow-sm profilepic" src="img/profile image.jpg" alt="">
+              </div>
+              <div class="col-lg-7 pl-5 text-center  text-lg-left">
+                  <h3 class="text-white font-weight-normal mb-3">I'm</h3>
+                  <!-- <h1 class="display-3 text-uppercase text-primary mb-2" style="-webkit-text-stroke: 2px #ffffff;">Sneha</h1> -->
+                  <svg width="0" height="0">
+                    <filter id="f" x="-50%" y="-200%" width="200%" height="500%" primitiveUnits="objectBoundingBox">
+                      <feGaussianBlur stdDeviation=".025 .2"></feGaussianBlur>
+                      <feColorMatrix type="saturate" values="1.3"></feColorMatrix>
+                      <feBlend in="SourceGraphic"></feBlend>
+                    </filter>
+                  </svg>
+                  <h1 style="text-align: left;" class="header-name">SNEHA</h1>
+                  <h1 class="typed-text-output d-inline font-weight-lighter text-white"></h1>
+                  <div class="typed-text d-none" style="color: var(secondary-text);">Frontend Developer, Web Developer, Web Designer</div>
+                  <div class="d-flex align-items-center justify-content-center justify-content-lg-start pt-5">
+                      <a href="./Resume//Sneha-traditional resume (2).pdf" download="" class="neon-button">Download CV</a>
+                      
+                      <!-- <button type="button" class="btn-play" data-toggle="modal"
+                          data-src="https://www.youtube.com/embed/DWRcNpR6Kdc" data-target="#videoModal">
+                          <span></span>
+                      </button> -->
+                      <!-- <h5 class="font-weight-normal text-white m-0 ml-4 d-none d-sm-block">Play Video</h5> -->
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+   </div>
     <!-- Header End -->
 
 
     <!-- About Start -->
-    <div class="container-fluid py-5" id="about">
+    <div class="about-section">
+      <div class="container-fluid py-5" id="about">
         <div class="container">
             <div class="position-relative d-flex align-items-center justify-content-center">
-                <h1 class="display-1 text-uppercase text-white" style="-webkit-text-stroke: 1px #dee2e6;">About</h1>
-                <h1 class="position-absolute text-uppercase text-primary">About Me</h1>
+                <h1 class="display-1 text-uppercase " style="-webkit-text-stroke: 1px #9738a5; color: var(--primary-bg); " >About</h1>
+                <h1 class="position-absolute text-uppercase text-primary" style="color: #ff33cc !important; text-shadow: 10px 13px 20px #ff33cccc;">About Me</h1>
             </div>
             <div class="row align-items-center">
                 <div class="col-lg-5 pb-4 pb-lg-0">
-                    <img class="img-fluid rounded w-100" src="img/professional photo-2.png" alt="">
+                    <img class="about-image img-fluid rounded w-100" src="img/programming-language.png" alt="">
                 </div>
                 <div class="col-lg-7">
-                    <h3 class="mb-4">Front end Developer</h3>
-                    <p>I'm a Frontend Developer with a passion for transforming ideas into engaging, user-friendly websites. With a strong foundation in HTML, CSS, and JavaScript, I enjoy building intuitive and responsive interfaces that enhance user experiences. From clean, semantic HTML to dynamic JavaScript interactions and custom CSS animations, I focus on crafting web experiences that are both visually appealing and functional.</p>
-                    <div class="row mb-3">
-                        <div class="col-sm-6 py-2"><h6>Name: <span class="text-secondary">Sneha</span></h6></div>
-                        <div class="col-sm-6 py-2"><h6>Birthday: <span class="text-secondary">2nd July 2003</span></h6></div>
-                        <div class="col-sm-6 py-2"><h6>Degree: <span class="text-secondary">BE., CSE</span></h6></div>
-                        <div class="col-sm-6 py-2"><h6>Experience: <span class="text-secondary">Fresher</span></h6></div>
-                        <div class="col-sm-6 py-2"><h6>Phone: <span class="text-secondary">8072899300</span></h6></div>
-                        <div class="col-sm-6 py-2"><h6>Email: <span class="text-secondary">snehabalu50@gmail.com</span></h6></div>
-                        <div class="col-sm-6 py-2"><h6>Address: <span class="text-secondary">Coimbatore,Tamil Nadu</span></h6></div>
+                    <h3 style="color: #ff33cc;" class="mb-4">Front end Developer</h3>
+                    <p class="text-white">I'm a Frontend Developer with a passion for transforming ideas into engaging, user-friendly websites. With a strong foundation in HTML, CSS, and JavaScript, I enjoy building intuitive and responsive interfaces that enhance user experiences. From clean, semantic HTML to dynamic JavaScript interactions and custom CSS animations, I focus on crafting web experiences that are both visually appealing and functional.</p>
+                    <div class="row mb-3 text-white">
+                        <div class="col-sm-6 py-2"><h6 style="color: #9738a5;">Name: <span class="text-light">Sneha</span></h6></div>
+                        <div class="col-sm-6 py-2"><h6 style="color: #9738a5;">Birthday: <span class="text-light">2nd July 2003</span></h6></div>
+                        <div class="col-sm-6 py-2"><h6 style="color: #9738a5;">Degree: <span class="text-light">BE., CSE</span></h6></div>
+                        <div class="col-sm-6 py-2"><h6 style="color: #9738a5;">Experience: <span class="text-light">Fresher</span></h6></div>
+                        <div class="col-sm-6 py-2"><h6 style="color: #9738a5;">Phone: <span class="text-light">8072899300</span></h6></div>
+                        <div class="col-sm-6 py-2"><h6 style="color: #9738a5;">Email: <span class="text-light">snehabalu50@gmail.com</span></h6></div>
+                        <div class="col-sm-6 py-2"><h6 style="color: #9738a5;">Address: <span class="text-light">Coimbatore,Tamil Nadu</span></h6></div>
                         
                     </div>
-                    <a href="#contact" class="btn btn-outline-primary mr-4">Hire Me</a>
-                    <a href="./Resume/Sneha-traditional resume (2).pdf" download="" class="btn btn-outline-primary">Resume</a>
+                    <a href="#contact" class="neon-button mr-4">Hire Me</a>
+                    <a href="./Resume/Sneha-traditional resume (2).pdf" download="" class="neon-button">Resume</a>
                 </div>
             </div>
         </div>
+    </div>
     </div>
     <!-- About End -->
 
@@ -159,10 +188,10 @@
     <div class="Qualification-section">
       <div class="container-fluid py-5" id="qualification">
         <div class="container">
-            <div class="position-relative d-flex align-items-center justify-content-center">
-                <h1 class="display-1 text-uppercase text-white" style="-webkit-text-stroke: 1px #dee2e6;">Resume</h1>
-                <h1 class="position-absolute text-uppercase text-primary">Education & Experience</h1>
-            </div>
+          <div class="position-relative d-flex align-items-center justify-content-center">
+            <h1 class="display-1 text-uppercase " style="-webkit-text-stroke: 1px rgb(151, 56, 165); color: var(--primary-bg); " >Resume</h1>
+            <h1 class="position-absolute text-uppercase text-primary" style="text-align: center; color: #ff33cc !important; text-shadow: 10px 13px 20px rgba(255,51,204,0.8);">Education & Experience</h1>
+        </div>
            
         </div>
     </div>
@@ -170,17 +199,17 @@
       <div class="container py-5">
           <div class="row">
               <div class="col-md-12">
-                  <div class="main-timeline">
+                  <div class="main-timeline text-white">
                     <div class="timeline">
                       <div class="timeline-content">
                           <div class="circle"><span class="homebox">
-                            <img src="./img/intern.png" class="img" width="100%" height="100%">
+                            <img src="./img/coding.png" class="img" width="100%" height="100%">
                            </span></div>
-                          <div class="content">
+                          <div class="content text-white">
                               <span class="year">2024 Nov-current</span>
                               <h3 class="title h4">Frontend developer - intern</h3>
-                              <p class="description">
-                                School of techies , Velachery, Chennai
+                              <p class="description text-white" style="color: white;">
+                                Techienutpam , Velachery, Chennai
                               </p>
                               <div class="icon"><span></span></div>
                           </div>
@@ -189,12 +218,12 @@
                       <div class="timeline">
                           <div class="timeline-content">
                               <div class="circle"><span class="homebox">
-                                <img src="./img/course.png" class="img" width="100%" height="100%">
+                                <img src="./img/coursee.png" class="img" width="100%" height="100%">
                                </span></div>
                               <div class="content">
                                   <span class="year">2024 july-current</span>
                                   <h3 class="title h4">Full Stack Development Course</h3>
-                                  <p class="description">
+                                  <p class="description" style="color: white;">
                                     School of techies , Velachery, Chennai
                                   </p>
                                   <div class="icon"><span></span></div>
@@ -203,11 +232,11 @@
                       </div>
                       <div class="timeline">
                           <div class="timeline-content">
-                              <div class="circle"><span class="homebox"><img src="./img/computer-science.jpg" class="img" width="100%" height="100%" /></span></div>
+                              <div class="circle"><span class="homebox"><img src="./img/degree.png" class="img" width="100%" height="100%" /></span></div>
                               <div class="content">
                                   <span class="year">2020 - 2024</span>
                                   <h3 class="title h4">BE., Computer Science Engineering</h3>
-                                  <p class="description">
+                                  <p class="description text-light">
                                     Bannari Amman Institute of Technology
                                   </p>
                                   <p>cgpa : 9.25 (7th semester)</p>
@@ -216,27 +245,29 @@
                           </div>
                       </div>
                       <div class="timeline">
-                          <div class="timeline-content">
-                              <div class="circle"><span class="homebox"><img src="./img/hsc.png" width="100%" height="100%" class="img"></span></div>
-                              <div class="content">
-                                  <span class="year">2019-2020</span>
-                                  <h3 class="title h4">HSC</h3>
-                                  <p class="description">
-                                    Vidyaa Vikas Matriculation School
-                                  </p>
-                                  <p>percentage - 88.33% | biomaths</p>
-                                  <div class="icon"><span></span></div>
-                              </div>
-                          </div>
-                      </div>
+                        <div class="timeline-content">
+                            <div class="circle"><span class="homebox">
+                              <img src="./img/hsc.png" class="img" width="100%" height="100%">
+                             </span></div>
+                            <div class="content">
+                                <span class="year">2019-2020</span>
+                                <h3 class="title h4">HSC - Vidyaa vikas matriculation school</h3>
+                                <p class="description">
+                                 <p> Biomaths | 88.33 %</p>
+                                </p>
+                                <div class="icon"><span></span></div>
+                            </div>
+                        </div>
+                    </div>
+                     
                       <div class="timeline">
                           <div class="timeline-content">
                               <div class="circle"><span class="homebox"><img src="./img/sslc.png" width="100%" height="100%" class="img"></span></div>
                               <div class="content">
                                   <span class="year">2017-2018</span>
-                                  <h3 class="title h4">SSLC</h3>
+                                  <h3 class="title h4">SSLC-Vidyaa Vikas Matriculation School</h3>
                                   <p class="description">
-                                    Vidyaa Vikas Matriculation School
+                                    
                                   </p>
                                   <p>percentage - 97%</p>
                                   <div class="icon"><span></span></div>
@@ -254,17 +285,18 @@
 
 
     <!-- Skill Start -->
-    <div class="container-fluid py-5" id="skill">
+    <div class="skill-section">
+      <div class="container-fluid py-5" id="skill">
         <div class="container">
-            <div class="position-relative d-flex align-items-center justify-content-center">
-                <h1 class="display-1 text-uppercase text-white" style="-webkit-text-stroke: 1px #dee2e6;">Skills</h1>
-                <h1 class="position-absolute text-uppercase text-primary">My Skills</h1>
-            </div>
-            <div class="row align-items-center">
+          <div class="position-relative d-flex align-items-center justify-content-center">
+            <h1 class="display-1 text-uppercase " style="-webkit-text-stroke: 1px rgb(151, 56, 165); color: var(--primary-bg); " >Skills</h1>
+            <h1 class="position-absolute text-uppercase text-primary" style="color: #ff33cc !important; text-shadow: 10px 13px 20px rgba(255,51,204,0.8);">My Skills</h1>
+        </div>
+            <div class="row align-items-center text-light">
                 <div class="col-md-6">
                     <div class="skill mb-4">
                         <div class="d-flex justify-content-between">
-                            <h6 class="font-weight-bold">HTML</h6>
+                            <h6 class="font-weight-bold text-light">HTML</h6>
                             
                         </div>
                         <div class="progress">
@@ -273,7 +305,7 @@
                     </div>
                     <div class="skill mb-4">
                         <div class="d-flex justify-content-between">
-                            <h6 class="font-weight-bold">CSS</h6>
+                            <h6 class="font-weight-bold text-light">CSS</h6>
                             
                         </div>
                         <div class="progress">
@@ -282,7 +314,7 @@
                     </div>
                     <div class="skill mb-4">
                         <div class="d-flex justify-content-between">
-                            <h6 class="font-weight-bold">Figma</h6>
+                            <h6 class="font-weight-bold text-light">Figma</h6>
                             
                         </div>
                         <div class="progress">
@@ -294,7 +326,7 @@
                 <div class="col-md-6">
                     <div class="skill mb-4">
                         <div class="d-flex justify-content-between">
-                            <h6 class="font-weight-bold">Javascript</h6>
+                            <h6 class="font-weight-bold text-light">Javascript</h6>
                             
                         </div>
                         <div class="progress">
@@ -304,7 +336,7 @@
                   
                     <div class="skill mb-4">
                         <div class="d-flex justify-content-between">
-                            <h6 class="font-weight-bold">Bootstrap</h6>
+                            <h6 class="font-weight-bold text-light">Bootstrap</h6>
                             
                         </div>
                         <div class="progress">
@@ -314,6 +346,7 @@
                 </div>
             </div>
         </div>
+    </div>
     </div>
     <!-- Skill End -->
 
@@ -325,10 +358,10 @@
     <div id="Portfolio" class="portfolio-section">
         <div class="container-fluid py-5" id="qualification">
             <div class="container">
-                <div class="position-relative d-flex align-items-center justify-content-center">
-                    <h1 class="display-1 text-uppercase text-white" style="-webkit-text-stroke: 1px #dee2e6;">My work</h1>
-                    <h1 class="position-absolute text-uppercase text-primary">Projects</h1>
-                </div>
+              <div class="position-relative d-flex align-items-center justify-content-center">
+                <h1 class="display-1 text-uppercase " style="text-align: center; -webkit-text-stroke: 1px rgb(151, 56, 165); color: var(--primary-bg); " >My Work</h1>
+                <h1 class="position-absolute text-uppercase text-primary" style="color: #ff33cc !important; text-shadow: 10px 13px 20px rgba(255,51,204,0.8);">Projects</h1>
+            </div>
                
             </div>
         </div>
@@ -359,7 +392,7 @@
                         <a href="https://cosmetics-viasun.netlify.app/" target="_blank"><img  src="./img/Screenshot (68).png" class="ag-timeline-card_img" width="100%" height="100%" /></a>
                       </div>
                       <div class="ag-timeline-card_info">
-                        <div class="ag-timeline-card_title">Full Stack Development | 2024-current</div>
+                        <div class="ag-timeline-card_title"></div>
                         <div class="ag-timeline-card_desc">
                           <p>July - 2024</p>
                           HTML , CSS I FRONTEND
@@ -388,7 +421,7 @@
                         <a href="https://cafe-project-2.netlify.app/" target="_blank"><img src="./img/Screenshot (69).png" class="ag-timeline-card_img" width="100%" height="100%" alt="" /></a>
                       </div>
                       <div class="ag-timeline-card_info">
-                        <div class="ag-timeline-card_title">Bannari Amman Institute of Technology</div>
+                        <div class="ag-timeline-card_title"></div>
                         <div class="ag-timeline-card_desc">
                           <p>August - 2024</p>
                           HTML , CSS I FRONTEND
@@ -476,12 +509,13 @@
 
 
     <!-- Contact Start -->
-    <div class="container-fluid py-5" id="contact">
+    <div class="contact">
+      <div class="container-fluid py-5" id="contact">
         <div class="container">
-            <div class="position-relative d-flex align-items-center justify-content-center">
-                <h1 class="display-1 text-uppercase text-white" style="-webkit-text-stroke: 1px #dee2e6;">Contact</h1>
-                <h1 class="position-absolute text-uppercase text-primary">Contact Me</h1>
-            </div>
+          <div class="position-relative d-flex align-items-center justify-content-center">
+            <h1 class="display-1 text-uppercase " style="-webkit-text-stroke: 1px rgb(151, 56, 165); color: var(--primary-bg); " >Contact</h1>
+            <h1 class="position-absolute text-uppercase text-primary" style="color: #ff33cc !important; text-shadow: 10px 13px 20px rgba(255,51,204,0.8);">Contact me</h1>
+        </div>
             <div class="row justify-content-center">
                 <div class="col-lg-8">
                     <div class="contact-form text-center">
@@ -489,29 +523,29 @@
                         <form name="sentMessage" id="contactForm" novalidate="novalidate">
                             <div class="form-row">
                                 <div class="control-group col-sm-6">
-                                    <input type="text" class="form-control p-4" id="name" placeholder="Your Name"
+                                    <input style="background-color: transparent; color: white;" type="text" class="form-control p-4" id="name" placeholder="Your Name"
                                         required="required" data-validation-required-message="Please enter your name" />
                                     <p class="help-block text-danger"></p>
                                 </div>
                                 <div class="control-group col-sm-6">
-                                    <input type="email" class="form-control p-4" id="email" placeholder="Your Email"
+                                    <input style="background-color: transparent;color: white;" type="email" class="form-control p-4" id="email" placeholder="Your Email"
                                         required="required" data-validation-required-message="Please enter your email" />
                                     <p class="help-block text-danger"></p>
                                 </div>
                             </div>
                             <div class="control-group">
-                                <input type="text" class="form-control p-4" id="subject" placeholder="Subject"
+                                <input style="background-color: transparent;color: white;" type="text" class="form-control p-4" id="subject" placeholder="Subject"
                                     required="required" data-validation-required-message="Please enter a subject" />
                                 <p class="help-block text-danger"></p>
                             </div>
                             <div class="control-group">
-                                <textarea class="form-control py-3 px-4" rows="5" id="message" placeholder="Message"
+                                <textarea style="background-color: transparent;color: white;" class="form-control py-3 px-4" rows="5" id="message" placeholder="Message"
                                     required="required"
                                     data-validation-required-message="Please enter your message"></textarea>
                                 <p class="help-block text-danger"></p>
                             </div>
                             <div>
-                                <button class="btn btn-outline-primary" type="submit" onclick="sendMail()" id="sendMessageButton">Send
+                                <button style="background-color: transparent;color: white;" class="neon-button m-4" type="submit" onclick="sendMail()" id="sendMessageButton">Send
                                     Message</button>
                             </div>
                         </form>
@@ -519,6 +553,7 @@
                 </div>
             </div>
         </div>
+    </div>
     </div>
     <!-- Contact End -->
      <script>
@@ -537,7 +572,8 @@
 
 
     <!-- Footer Start -->
-    <div class="container-fluid bg-primary text-white mt-5 py-5 px-sm-3 px-md-5">
+    <div class="footer-section">
+      <div class="container-fluid bg-primary text-white mt-5 py-5 px-sm-3 px-md-5">
         <div class="container text-center py-5">
             <div class="d-flex justify-content-center mb-4">
                
@@ -548,10 +584,12 @@
                 
             </div>
            
-            <p class="m-0">&copy; <a class="text-white font-weight-bold" href="#">Sneha K B</a>. All Rights Reserved. 
+            <p class="m-0">&copy; <a class="text-white font-weight-bold" href="#">Sneha</a>. All Rights Reserved. 
             </p>
         </div>
     </div>
+    </div>
+
     <!-- Footer End -->
 
     <!-- Scroll to Bottom -->
